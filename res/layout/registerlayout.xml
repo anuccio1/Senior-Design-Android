@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_bg" 
+    android:paddingTop="30dp">
+
+
+<LinearLayout     
+    android:id="@+id/unLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<TextView
+    android:id="@+id/usernametxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/un"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:visibility="visible" 
+    android:orientation="vertical"
+    android:padding="20dp"/>
+
+<EditText
+    android:id="@+id/reglogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/unhint"
+    android:inputType="textEmailAddress"
+    android:orientation="vertical"
+    android:padding="20dp" />
+
+</LinearLayout>
+
+<LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pwLayout"
+    android:layout_below="@id/unLayout" > 
+<TextView
+    android:id="@+id/passwordtxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/pw"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:padding="20dp" />
+
+<EditText
+    android:id="@+id/regpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:gravity="right|center_vertical"
+    android:hint="@string/pwhint"
+    android:inputType="textPassword"
+    android:orientation="vertical" 
+    android:padding="20dp"/>
+</LinearLayout>
+
+
+<LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/repwLayout"
+    android:layout_below="@id/pwLayout" > 
+<TextView
+    android:id="@+id/repasswordtxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/repw"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:padding="20dp" />
+
+<EditText
+    android:id="@+id/repassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:gravity="right|center_vertical"
+    android:hint="@string/pwhint"
+    android:inputType="textPassword"
+    android:orientation="vertical" 
+    android:padding="20dp"/>
+</LinearLayout>
+
+
+<LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/registerbuttonlayout"
+    android:layout_below="@id/repwLayout"
+    android:gravity="center_horizontal"
+    android:paddingTop="10dp">
+
+<Button
+    android:id="@+id/regbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regbutton"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:visibility="visible"
+    android:padding="20dp" >  
+    </Button>
+</LinearLayout>
+
+</RelativeLayout>
+
+

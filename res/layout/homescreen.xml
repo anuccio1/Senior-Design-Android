@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/orange_bg"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLog"
+    android:orientation="vertical"  >
+    
+<TextView
+    android:id="@+id/login_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:text="@string/login_message"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/text_size"
+    android:textStyle="normal|bold"
+    android:visibility="visible" >
+
+</TextView>    
+<View 
+      android:layout_width="match_parent" 
+      android:layout_height="3dp" 
+      android:paddingTop="1dp" 
+      android:background="#FFFFFF">
+      </View> 
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/messageLog"
+    android:id="@+id/pickMessage" >
+
+<TextView
+    android:id="@+id/pick_vehicle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="50dp"
+    android:text="@string/pick_vehicle"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/text_size"
+    android:textStyle="normal"
+    android:visibility="visible" >
+</TextView>    
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/pickMessage"
+    android:id="@+id/layoutSpinner" 
+    android:paddingTop="15dp">
+
+<Spinner
+    android:id="@+id/carSpinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:clickable="true"
+    android:contentDescription="@string/spindesc"
+    android:gravity="center_horizontal"
+    android:prompt="@string/spindesc"
+    android:visibility="visible" >
+    
+</Spinner>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layoutSpinner"
+    android:id="@+id/newCarMessage" >
+
+<TextView
+    android:id="@+id/new_vehicle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="60dp"
+    android:text="@string/new_vehicle"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/text_size"
+    android:textStyle="normal"
+    android:visibility="visible" >
+</TextView>    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/newCarMessage"
+    android:id="@+id/newcarbutton"
+    android:gravity="center_horizontal" 
+    android:paddingTop="15dp">
+
+<Button
+    android:id="@+id/addbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/addCarButton"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:visibility="visible"
+    android:padding="20dp" >  
+    </Button>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
