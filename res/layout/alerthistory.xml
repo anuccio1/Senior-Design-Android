@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/orange_bg" 
-    android:id="@+id/title"
+    android:id="@+id/titlee"
     android:gravity="center_horizontal">
 <TextView
     android:id="@+id/alertList"
@@ -25,17 +25,24 @@
 </LinearLayout>
 
 <LinearLayout
-    android:baselineAligned="false"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@id/title" 
+    android:layout_below="@id/titlee" 
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     android:paddingTop="10dp">
 
     <ListView
-        android:id="@+id/listView1"
-        android:layout_width="0dp"
+        android:id="@+id/alertlistview"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1" >
+        android:orientation="vertical"
+        android:textSize="@dimen/title"
+    	android:textStyle="normal|bold"
+        android:contentDescription="@string/hello_world"
+        android:visibility="visible" >
+
     </ListView>
 
 </LinearLayout>

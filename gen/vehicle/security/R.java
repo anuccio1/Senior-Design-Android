@@ -31,47 +31,49 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int ID=0x7f08001f;
-        public static final int IDLayout=0x7f08001d;
-        public static final int IDtxt=0x7f08001e;
-        public static final int action_settings=0x7f080028;
-        public static final int addbutton=0x7f08000c;
+        public static final int action_settings=0x7f08002a;
+        public static final int addbutton=0x7f08000e;
         public static final int alertList=0x7f080001;
+        public static final int alertlistview=0x7f080002;
         public static final int carSpinner=0x7f080008;
-        public static final int imageView1=0x7f080018;
+        public static final int imageView1=0x7f08001a;
         public static final int layoutSpinner=0x7f080007;
-        public static final int listView1=0x7f080002;
-        public static final int loggbutton=0x7f080014;
+        public static final int loggbutton=0x7f080016;
         public static final int login_message=0x7f080004;
-        public static final int loginbuttonLayout=0x7f080013;
-        public static final int loglogin=0x7f08000f;
-        public static final int logpassword=0x7f080012;
+        public static final int loginbuttonLayout=0x7f080015;
+        public static final int loglogin=0x7f080011;
+        public static final int logpassword=0x7f080014;
         public static final int messageLog=0x7f080003;
-        public static final int newCarMessage=0x7f080009;
-        public static final int new_vehicle=0x7f08000a;
-        public static final int newcarbutton=0x7f08000b;
-        public static final int newregbutton=0x7f080016;
-        public static final int passwordtxt=0x7f080011;
+        public static final int newCarMessage=0x7f08000b;
+        public static final int new_vehicle=0x7f08000c;
+        public static final int newcarbutton=0x7f08000d;
+        public static final int newregbutton=0x7f080018;
+        public static final int passwordtxt=0x7f080013;
+        public static final int phoneLayout=0x7f08001f;
+        public static final int phonenum=0x7f080021;
+        public static final int phonetxt=0x7f080020;
         public static final int pickMessage=0x7f080005;
         public static final int pick_vehicle=0x7f080006;
-        public static final int pwLayout=0x7f080010;
-        public static final int regIDbutton=0x7f080021;
-        public static final int regIDbuttonLayout=0x7f080020;
-        public static final int regbutton=0x7f080027;
-        public static final int registerbuttonlayout=0x7f080015;
-        public static final int reglogin=0x7f080022;
-        public static final int regpassword=0x7f080023;
-        public static final int repassword=0x7f080026;
-        public static final int repasswordtxt=0x7f080025;
-        public static final int repwLayout=0x7f080024;
-        public static final int textView1=0x7f080017;
-        public static final int textView2=0x7f080019;
-        public static final int title=0x7f080000;
-        public static final int unLayout=0x7f08000d;
-        public static final int usernametxt=0x7f08000e;
-        public static final int vnLayout=0x7f08001a;
-        public static final int vname=0x7f08001c;
-        public static final int vnametxt=0x7f08001b;
+        public static final int pwLayout=0x7f080012;
+        public static final int regIDbutton=0x7f080023;
+        public static final int regIDbuttonLayout=0x7f080022;
+        public static final int regbutton=0x7f080029;
+        public static final int registerbuttonlayout=0x7f080017;
+        public static final int reglogin=0x7f080024;
+        public static final int regpassword=0x7f080025;
+        public static final int repassword=0x7f080028;
+        public static final int repasswordtxt=0x7f080027;
+        public static final int repwLayout=0x7f080026;
+        public static final int textView1=0x7f080019;
+        public static final int textView2=0x7f08001b;
+        public static final int titlee=0x7f080000;
+        public static final int unLayout=0x7f08000f;
+        public static final int usernametxt=0x7f080010;
+        public static final int viewcar=0x7f080009;
+        public static final int viewcarbutton=0x7f08000a;
+        public static final int vnLayout=0x7f08001c;
+        public static final int vname=0x7f08001e;
+        public static final int vnametxt=0x7f08001d;
     }
     public static final class layout {
         public static final int alerthistory=0x7f030000;
@@ -82,11 +84,12 @@ public final class R {
         public static final int registerlayout=0x7f030005;
     }
     public static final class menu {
-        public static final int sms_receiver=0x7f070000;
+        public static final int add_vehicle=0x7f070000;
+        public static final int sms_receiver=0x7f070001;
     }
     public static final class string {
-        public static final int ID=0x7f06000e;
-        public static final int IDhint=0x7f06000f;
+        public static final int UNhint=0x7f06000f;
+        public static final int Uname=0x7f06000e;
         public static final int action_settings=0x7f06001e;
         public static final int addCarButton=0x7f060017;
         public static final int alertList=0x7f060019;
@@ -103,6 +106,8 @@ public final class R {
         public static final int loginscreen_name=0x7f06001a;
         public static final int mainscreen_name=0x7f06001b;
         public static final int new_vehicle=0x7f060006;
+        public static final int phonealert=0x7f060021;
+        public static final int phonehint=0x7f060022;
         public static final int pick_vehicle=0x7f060005;
         public static final int pw=0x7f060007;
         public static final int pwhint=0x7f060008;
@@ -111,9 +116,11 @@ public final class R {
         public static final int regscreen_name=0x7f06001c;
         public static final int repw=0x7f060009;
         public static final int spindesc=0x7f060018;
+        public static final int title_activity_add_vehicle=0x7f060023;
         public static final int title_activity_sms_receiver=0x7f06001d;
         public static final int un=0x7f06000a;
         public static final int unhint=0x7f06000b;
+        public static final int viewalert_name=0x7f060020;
         public static final int vn=0x7f06000c;
         public static final int vnhint=0x7f06000d;
         public static final int welcome_message=0x7f060001;

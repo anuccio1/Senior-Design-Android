@@ -5,6 +5,8 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -19,13 +21,12 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <receiver
-            android:name=".SMSreceiver"
+            android:name="vehicle.security.SMSreceiver"
             android:exported="true" >
             <intent-filter android:priority="1000" >
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
@@ -45,8 +46,12 @@
             android:label="@string/regscreen_name" >
         </activity>
         <activity
-            android:name="vehicle.security.SmsReceiver"
-            android:label="@string/title_activity_sms_receiver" >
+            android:name="vehicle.security.AddVehicleActivity"
+            android:label="@string/title_activity_add_vehicle" >
+        </activity>
+        <activity
+            android:name="vehicle.security.ViewAlertsActivity"
+            android:label="@string/viewalert_name" >
         </activity>
     </application>
 

@@ -4,15 +4,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelperVehicle extends SQLiteOpenHelper {
 	// The database name and version
-	private static final String DB_NAME = "login1";
-	private static final int DB_VERSION = 1;
+	private static final String DB_NAME = "vehicle3";
+	private static final int DB_VERSION = 2;
 	// The database user table
-	private static final String DB_TABLE = "create table user (id integer primary key autoincrement, " 
-											+ "username text not null, password text not null);";
+	private static final String DB_TABLE = "create table vehicle3 (id integer primary key autoincrement, "
+											+ "username text not null,vehicle text not null, phone text not null);";
 	
-	public DatabaseHelper(Context context) {
+	public DatabaseHelperVehicle(Context context) {
 		super(context, DB_NAME, null, DB_VERSION);
 	}
 
@@ -23,7 +23,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	
 	@Override
 	public void onUpgrade(SQLiteDatabase database, int oldVersion, int newVersion) {
-		Log.w(DatabaseHelper.class.getName(),
+		Log.w(DatabaseHelperVehicle.class.getName(),
 				"Upgrading databse from version" + oldVersion + "to " 
 				+ newVersion + ", which will destroy all old data");
 		database.execSQL("DROP TABLE IF EXISTS user");

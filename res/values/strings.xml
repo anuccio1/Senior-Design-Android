@@ -15,8 +15,8 @@
     <string name="unhint">Enter Email Here</string>
     <string name="vn">Name of Vehicle</string>
     <string name="vnhint">Enter Name Here</string>
-    <string name="ID">Registration ID</string>
-    <string name="IDhint">Enter ID Here</string>
+    <string name="Uname">Username</string>
+    <string name="UNhint">Enter Username Here</string>
     <string name="regID">ADD NEW VEHICLE</string>
     <string name="fn">First name</string>
     <string name="fnhint">Enter First Name</string>
@@ -33,5 +33,9 @@
     <string name="title_activity_sms_receiver">SmsReceiver</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="viewalert_name">View Prev Alerts</string>
+    <string name="phonealert">Device Phone Number</string>
+    <string name="phonehint">Enter Phone # Here</string>
+    <string name="title_activity_add_vehicle">AddVehicleActivity</string>
 
 </resources>

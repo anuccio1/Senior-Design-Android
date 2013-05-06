@@ -84,6 +84,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/layoutSpinner"
+    android:id="@+id/viewcar"
+    android:gravity="center_horizontal" 
+    android:paddingTop="15dp">
+
+<Button
+    android:id="@+id/viewcarbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/alertList"
+    android:textColorLink="@color/text_color"
+    android:textSize="@dimen/credentials"
+    android:textStyle="normal|bold"
+    android:visibility="visible"
+    android:padding="20dp" >  
+    </Button>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/viewcar"
     android:id="@+id/newCarMessage" >
 
 <TextView
@@ -92,7 +112,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:gravity="center_horizontal"
-    android:paddingTop="60dp"
+    android:paddingTop="20dp"
     android:text="@string/new_vehicle"
     android:textColorLink="@color/text_color"
     android:textSize="@dimen/text_size"
@@ -100,7 +120,6 @@
     android:visibility="visible" >
 </TextView>    
 </LinearLayout>
-
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

@@ -1,7 +1,7 @@
 package vehicle.security;
 
-import vehicle.database.DatabaseAdapter;
-import vehicle.database.DatabaseHelper;
+import vehicle.database.DatabaseAdapterUser;
+import vehicle.database.DatabaseHelperUser;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -18,13 +18,13 @@ public class RegisterActivity extends Activity {
 	private EditText username;
 	private EditText password;
 	private EditText repassword;
-	private DatabaseAdapter dbHelper;
+	private DatabaseAdapterUser dbHelper;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
 
-		dbHelper = new DatabaseAdapter(this);
+		dbHelper = new DatabaseAdapterUser(this);
 		dbHelper.open();
 		setContentView(R.layout.registerlayout);
 		
@@ -76,7 +76,7 @@ public class RegisterActivity extends Activity {
 
 			//Check for duplicate usernames  
 			if (curruser.getCount() > 0) {  
-				Toast.makeText(getApplicationContext(), "The username is already registered",  
+				Toast.makeText(getApplicationContext(), "The username is already registered!",  
 						Toast.LENGTH_SHORT).show();  
 				stopManagingCursor(curruser);  
 				curruser.close();  
@@ -92,8 +92,8 @@ public class RegisterActivity extends Activity {
 			} else {  
 				startManagingCursor(curruser);  
 
-				if (curruser.getCount() > 0) {  
-					Toast.makeText(getApplicationContext(), "The username is already registered",  
+				if (curruser.moveToFirst()) { 
+					Toast.makeText(getApplicationContext(), "The username is already registeredd",  
 							Toast.LENGTH_SHORT).show();  
 					stopManagingCursor(curruser);  
 					curruser.close();  

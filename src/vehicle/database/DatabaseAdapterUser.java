@@ -6,7 +6,7 @@ package vehicle.database;
  import android.database.SQLException;  
  import android.database.sqlite.SQLiteDatabase;  
 
- public class DatabaseAdapter {  
+ public class DatabaseAdapterUser {  
       //Table name  
       private static final String LOGIN_TABLE = "user";  
       //Table unique id  
@@ -17,15 +17,15 @@ package vehicle.database;
    
       private Context context;  
       private SQLiteDatabase database;  
-      private DatabaseHelper dbHelper;  
+      private DatabaseHelperUser dbHelper;  
    
-      public DatabaseAdapter(Context context) {  
+      public DatabaseAdapterUser(Context context) {  
            this.context = context;  
       }  
    
 
-      public DatabaseAdapter open() throws SQLException {  
-           dbHelper = new DatabaseHelper(context);  
+      public DatabaseAdapterUser open() throws SQLException {  
+           dbHelper = new DatabaseHelperUser(context);  
            database = dbHelper.getWritableDatabase();  
            return this;  
       }  
@@ -49,8 +49,8 @@ package vehicle.database;
       }  
 
       public Cursor fetchAllUsers() {  
-           return database.query(LOGIN_TABLE, new String[] { COL_ID, COL_USERNAME,   
-                     COL_PASSWORD }, null, null, null, null, null);  
+    	  String selectQuery = "SELECT "+ LOGIN_TABLE +".*,"+LOGIN_TABLE+".COL_ID as _id FROM" + LOGIN_TABLE;
+           return database.rawQuery(selectQuery,null); 
       }  
 
       public Cursor fetchUser(String username, String password) {  
